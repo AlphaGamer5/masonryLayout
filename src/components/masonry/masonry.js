@@ -6,6 +6,7 @@ import About from '../about/about'
 import SignUp from '../register/register';
 import Rules from '../rules/rules';
 import Judgement from '../judgement/judgement';
+import SimpleZoom from '../animations/animation'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,8 +36,8 @@ export default function AutoGrid() {
         <Grid item xs={12} lg={5}>
           <Paper className={classes.paper}><Judgement/></Paper>
         </Grid>
-        <Grid item xs={12} lg={7}>
-          <Paper className={classes.paper}><SignUp/></Paper>
+        <Grid item xs={12} lg={5}>
+          <Paper className={classes.paper}><SimpleZoom/></Paper>
         </Grid>
       </Grid>
     </div>
